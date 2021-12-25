@@ -9,6 +9,9 @@ project(maze_robot_description)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  gazebo
+  tf
+  urdf
 )
 
 ## System dependencies are found with CMake's conventions
