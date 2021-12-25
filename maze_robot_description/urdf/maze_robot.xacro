@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<robot name="maze_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find maze_robot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find maze_robot_description)/urdf/maze_robot.trans" />
+<xacro:include filename="$(find maze_robot_description)/urdf/maze_robot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.012019012583039234 2.839868334248929e-17 0.03334363059790434"/>
+    <mass value="0.88391611210284"/>
+    <inertia ixx="0.001145" ixy="0.0" ixz="7e-06" iyy="0.002293" iyz="0.0" izz="0.003199"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 -0.009999999999999995 0.0"/>
+    <mass value="0.05975279634232592"/>
+    <inertia ixx="1.7e-05" ixy="-0.0" ixz="0.0" iyy="3.1e-05" iyz="-0.0" izz="1.7e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.06 0.07 -0.0325"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.06 0.07 -0.0325"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 0.009999999999999995 0.0"/>
+    <mass value="0.05975279634232592"/>
+    <inertia ixx="1.7e-05" ixy="0.0" ixz="-0.0" iyy="3.1e-05" iyz="0.0" izz="1.7e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.06 -0.07 -0.0325"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.06 -0.07 -0.0325"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="top_camera_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.011830127018922196 0.015 0.01049038105676657"/>
+    <mass value="0.011880000000000009"/>
+    <inertia ixx="2e-06" ixy="0.0" ixz="-0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.005 0.015 -0.1075"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/top_camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.005 0.015 -0.1075"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/top_camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="caster_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.029999999999999985 0.0 -0.0067500000000000025"/>
+    <mass value="0.0693604753050371"/>
+    <inertia ixx="5e-06" ixy="0.0" ixz="-0.0" iyy="5e-06" iyz="0.0" izz="7e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.08 -0.0 -0.0175"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/caster_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.08 -0.0 -0.0175"/>
+    <geometry>
+      <mesh filename="package://maze_robot_description/meshes/caster_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="right_joint" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.06 -0.07 0.0325"/>
+  <parent link="base_link"/>
+  <child link="right_wheel_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="left_joint" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.06 0.07 0.0325"/>
+  <parent link="base_link"/>
+  <child link="left_wheel_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="camera_joint" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.005 -0.015 0.1075"/>
+  <parent link="base_link"/>
+  <child link="top_camera_1"/>
+</joint>
+
+<joint name="caster_joint" type="fixed">
+  <origin rpy="0 0 0" xyz="0.08 0.0 0.0175"/>
+  <parent link="base_link"/>
+  <child link="caster_1"/>
+</joint>
+
+</robot>
