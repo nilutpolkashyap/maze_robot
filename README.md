@@ -1,10 +1,10 @@
 # maze_robot
-# ROS based Line Follower and Maze solver robot simulation in Gazebo
+## ROS based Line Follower and Maze solver robot simulation in Gazebo
 <br>
 
-<img src="https://img.shields.io/github/license/nilutpolkashyap/maze_robot?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/nilutpolkashyap/bug_robot?style=for-the-badge">
+<img src="https://img.shields.io/github/license/nilutpolkashyap/maze_robot?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/nilutpolkashyap/maze_robot?style=for-the-badge">
 
-Clone this Repository - ``` git clone https://github.com/nilutpolkashyap/bug_robot.git ```
+Clone this Repository - ``` git clone https://github.com/nilutpolkashyap/maze_robot.git ```
 ____________________________________________________________________________
 # **Details About Project**
 
