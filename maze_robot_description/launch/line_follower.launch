@@ -8,6 +8,6 @@
     <arg name="gui" value="true"/>
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
-    <arg name="world_name" value="$(find maze_robot_description)/worlds/lf.world"/>
+    <arg name="world_name" value="$(find maze_robot_description)/worlds/line_follower.world"/>
   </include>
 </launch>

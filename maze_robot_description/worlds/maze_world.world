@@ -1,0 +1,2187 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.5 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name='default'>
+      <sim_time>1384 761000000</sim_time>
+      <real_time>758 836353919</real_time>
+      <wall_time>1676145446 309221239</wall_time>
+      <iterations>340865</iterations>
+      <model name='yellow line'>
+        <pose>3.64067 -0.002486 -2e-06 4e-06 -0 1.57263</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>3.64067 -0.002486 -2e-06 4e-06 -0 1.57263</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.000171 -3e-06 -0 -2.90343 1.0075 -3.14159</acceleration>
+          <wrench>0.000171 -3e-06 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_0'>
+        <pose>-0.684863 3.2835 7e-06 -6e-06 1e-06 2e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-0.684863 3.2835 7e-06 -6e-06 1e-06 2e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.000141 0.000122 -2.12637 -2.41303 0.244852 5e-05</acceleration>
+          <wrench>-0.000141 0.000122 -2.12637 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_1'>
+        <pose>-3.59658 3.31193 -8e-06 5e-06 2e-06 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-3.59658 3.31193 -8e-06 5e-06 2e-06 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>2e-06 -0.000218 -8.48322 1.97517 -0.065839 -1.4e-05</acceleration>
+          <wrench>2e-06 -0.000218 -8.48322 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_10'>
+        <pose>13.3156 8.55615 -2e-06 4e-06 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>13.3156 8.55615 -2e-06 4e-06 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>2e-06 -0.000171 0 2.13363 0.313373 0</acceleration>
+          <wrench>2e-06 -0.000171 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_11'>
+        <pose>13.3117 3.16747 -1.3e-05 -6e-06 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>13.3117 3.16747 -1.3e-05 -6e-06 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_12'>
+        <pose>10.4111 0.197266 -7e-06 -1.6e-05 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>10.4111 0.197266 -7e-06 -1.6e-05 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-1e-05 0.000142 -1.11047 0.422304 -0.106552 -1.4e-05</acceleration>
+          <wrench>-1e-05 0.000142 -1.11047 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_13'>
+        <pose>13.3674 -1.23961 -6e-06 -7e-06 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>13.3674 -1.23961 -6e-06 -7e-06 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-9e-05 0.00031 2.47786 0.43276 0.450133 -0.000136</acceleration>
+          <wrench>-9e-05 0.00031 2.47786 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_14'>
+        <pose>-0.200066 0.042625 -2e-06 -4e-06 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-0.200066 0.042625 -2e-06 -4e-06 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>2e-06 0.000171 0 -2.13363 0.313373 0</acceleration>
+          <wrench>2e-06 0.000171 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_2'>
+        <pose>-3.59619 6.29229 -3e-06 6e-06 -2e-06 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-3.59619 6.29229 -3e-06 6e-06 -2e-06 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>9e-06 -0.000194 -1.77289 -2.88441 0.475356 0</acceleration>
+          <wrench>9e-06 -0.000194 -1.77289 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_2_clone'>
+        <pose>-3.59718 9.25688 -2e-05 1.7e-05 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-3.59718 9.25688 -2e-05 1.7e-05 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>2e-06 -0.000122 -3.70279 2.86263 0.171325 0</acceleration>
+          <wrench>2e-06 -0.000122 -3.70279 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_3'>
+        <pose>5.25144 6.31254 -0 1.1e-05 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>5.25144 6.31254 -0 1.1e-05 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-2e-06 -0.000135 -1.30675 -0.645316 0.023055 2e-06</acceleration>
+          <wrench>-2e-06 -0.000135 -1.30675 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_4'>
+        <pose>1.06082 8.61861 -2e-06 4e-06 -1e-06 0</pose>
+        <scale>1 0.605038 1</scale>
+        <link name='link_ground'>
+          <pose>1.06082 8.61861 -2e-06 4e-06 -1e-06 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>4e-06 -0.000174 0.00661 2.1435 0.245007 -1e-06</acceleration>
+          <wrench>4e-06 -0.000174 0.00661 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_5'>
+        <pose>2.19978 2.39516 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>2.19978 2.39516 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_6'>
+        <pose>1 0 0 0 -0 1.57</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>1 0 0 0 -0 1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_7'>
+        <pose>8.23183 9.31132 -8e-06 -9e-06 2e-06 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>8.23183 9.31132 -8e-06 -9e-06 2e-06 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4e-06 0.000196 -3.70123 -2.86496 -0.225602 -0</acceleration>
+          <wrench>-4e-06 0.000196 -3.70123 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_8'>
+        <pose>8.2307 6.41867 -2.7e-05 -8e-06 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>8.2307 6.41867 -2.7e-05 -8e-06 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 -0 -9.8 0 -0 0</acceleration>
+          <wrench>-0 -0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_9'>
+        <pose>13.3118 6.10237 -3.5e-05 -3e-06 -3.7e-05 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>13.3118 6.10237 -3.5e-05 -3e-06 -3.7e-05 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 -0 -9.8 0 -0 0</acceleration>
+          <wrench>-0 -0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone'>
+        <pose>0.7517 4.74225 -3e-06 -6e-06 0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>0.7517 4.74225 -3e-06 -6e-06 0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.000208 6.2e-05 -0.905683 -2.7369 0.01676 3.14154</acceleration>
+          <wrench>-0.000208 6.2e-05 -0.905683 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone'>
+        <pose>-2.14412 1.82781 -9e-06 1e-05 -0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-2.14412 1.82781 -9e-06 1e-05 -0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 -0 -9.77385 0.001244 0.036671 0</acceleration>
+          <wrench>0 -0 -9.77385 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0'>
+        <pose>-2.14961 7.75344 -1.8e-05 -9e-06 1e-06 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-2.14961 7.75344 -1.8e-05 -9e-06 1e-06 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 -0 -9.8 0 -0 0</acceleration>
+          <wrench>0 -0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone'>
+        <pose>-2.14731 10.7557 -6e-06 -7e-06 0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>-2.14731 10.7557 -6e-06 -7e-06 0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.000152 -3e-06 -3.70279 -2.95442 -0.279271 3.14159</acceleration>
+          <wrench>-0.000152 -3e-06 -3.70279 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone'>
+        <pose>0.819861 10.7638 5e-06 0 2e-06 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>0.819861 10.7638 5e-06 0 2e-06 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 -9.8 0 -0 0</acceleration>
+          <wrench>-0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_0'>
+        <pose>3.81147 10.7719 -1e-06 -1.1e-05 -2e-06 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>3.81147 10.7719 -1e-06 -1.1e-05 -2e-06 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.000127 -1e-06 -2.09647 0.122771 1.15895 2e-06</acceleration>
+          <wrench>-0.000127 -1e-06 -2.09647 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_1'>
+        <pose>6.7904 10.7785 3e-06 -1.5e-05 0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>6.7904 10.7785 3e-06 -1.5e-05 0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-6e-06 -1.8e-05 -3.51411 -2.90822 -0.151979 3.14156</acceleration>
+          <wrench>-6e-06 -1.8e-05 -3.51411 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_2'>
+        <pose>9.76563 10.7866 -2e-06 4e-06 -0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>9.76563 10.7866 -2e-06 4e-06 -0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.000171 -2e-06 -6e-06 -2.81705 1.00739 3.14159</acceleration>
+          <wrench>0.000171 -2e-06 -6e-06 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_2_clone'>
+        <pose>9.72336 4.97585 -2e-06 -4e-06 -0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>9.72336 4.97585 -2e-06 -4e-06 -0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.000172 1e-06 0.002407 2.82473 -1.00378 3.14159</acceleration>
+          <wrench>-0.000172 1e-06 0.002407 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_2_clone_0'>
+        <pose>9.75262 7.5806 -2.7e-05 2.1e-05 -0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>9.75262 7.5806 -2.7e-05 2.1e-05 -0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>9.2e-05 -1e-06 -3.70279 -2.98617 0.278679 -3.14159</acceleration>
+          <wrench>9.2e-05 -1e-06 -3.70279 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_2_clone_1'>
+        <pose>11.8582 7.58394 -2.1e-05 4e-06 -0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>11.8582 7.58394 -2.1e-05 4e-06 -0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 -9.8 0 -0 0</acceleration>
+          <wrench>-0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_2_clone_clone'>
+        <pose>11.8558 1.70407 -2.7e-05 0 -0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>11.8558 1.70407 -2.7e-05 0 -0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-3e-06 7.6e-05 -12.4856 -3.00045 0.816449 3.14148</acceleration>
+          <wrench>-3e-06 7.6e-05 -12.4856 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_0_clone_clone_2_clone_clone_clone'>
+        <pose>11.8744 -1.24777 -3e-06 -5e-06 0 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>11.8744 -1.24777 -3e-06 -5e-06 0 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4.9e-05 -2e-06 -5.37413 0.232803 -0.355224 0</acceleration>
+          <wrench>-4.9e-05 -2e-06 -5.37413 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_1'>
+        <pose>0.810121 7.75828 -1.8e-05 2.3e-05 -5e-06 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>0.810121 7.75828 -1.8e-05 2.3e-05 -5e-06 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>8.3e-05 6e-06 -1.82337 -0.416879 -0.816975 -5e-06</acceleration>
+          <wrench>8.3e-05 6e-06 -1.82337 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='yellow line_clone_clone_2'>
+        <pose>3.79999 7.76362 -2e-06 -4e-06 1e-06 1.57253</pose>
+        <scale>1 1 1</scale>
+        <link name='link_ground'>
+          <pose>3.79999 7.76362 -2e-06 -4e-06 1e-06 1.57253</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.000178 -5e-06 0.016906 -2.79832 -0.983178 3.14159</acceleration>
+          <wrench>-0.000178 -5e-06 0.016906 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>8.76091 2.98651 30.6868 -5.7e-05 1.5698 1.56744</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='yellow line_5'>
+      <static>1</static>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.1 4.8</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.1 4.8</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+      <pose>2.19978 2.39516 0 0 -0 0</pose>
+    </model>
+    <model name='yellow line_6'>
+      <static>1</static>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.1 2.5</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.1 2.5</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+      <pose>1 0 0 0 -0 1.57</pose>
+    </model>
+    <model name='yellow line'>
+      <pose>4.63994 1.45853 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone'>
+      <pose>0.751702 4.74225 -2e-06 4e-06 -0 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_0'>
+      <pose>-0.684864 3.2835 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone'>
+      <pose>-2.14412 1.82781 -5e-06 -6e-06 0 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_1'>
+      <pose>-3.59658 3.31193 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_2'>
+      <pose>-3.59619 6.29229 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0'>
+      <pose>-2.14961 7.75344 -4e-06 6e-06 -0 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_2_clone'>
+      <pose>-3.59718 9.25688 -3e-06 6e-06 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_1'>
+      <pose>0.810121 7.75828 -2e-06 4e-06 -0 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_2'>
+      <pose>3.79999 7.76362 -2e-06 4e-06 -0 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_3'>
+      <pose>5.25144 6.31254 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_4'>
+      <pose>1.06082 9.22923 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 4.95835 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 4.95835 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone'>
+      <pose>-2.14731 10.7557 -1.7e-05 -4e-06 -1e-06 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone'>
+      <pose>0.819861 10.7638 -0 -4e-06 2e-06 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_0'>
+      <pose>3.81147 10.7719 -0 -4e-06 2e-06 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_1'>
+      <pose>6.7904 10.7785 -0 -4e-06 2e-06 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_2'>
+      <pose>9.76563 10.7866 -0 -4e-06 2e-06 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_7'>
+      <pose>8.23183 9.31132 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_8'>
+      <pose>8.2307 6.41867 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_2_clone'>
+      <pose>9.72336 4.97585 2e-06 4e-06 7.6e-05 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_2_clone_0'>
+      <pose>9.75262 7.5806 2e-06 4e-06 7.6e-05 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_2_clone_1'>
+      <pose>11.8582 7.58394 2e-06 4e-06 7.6e-05 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_9'>
+      <pose>13.3118 6.10237 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_10'>
+      <pose>13.3156 8.55615 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_11'>
+      <pose>13.3117 3.16747 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_2_clone_clone'>
+      <pose>11.8558 1.70407 -2e-06 5e-06 -0 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_12'>
+      <pose>10.4111 0.197266 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_clone_clone_0_clone_clone_2_clone_clone_clone'>
+      <pose>11.8744 -1.24777 1e-05 3e-06 3e-06 1.57253</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_13'>
+      <pose>13.3674 -1.23961 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name='yellow line_14'>
+      <pose>-0.200066 0.042625 0 0 -0 0</pose>
+      <link name='link_ground'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual_ground'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>0.1 3 1e-05</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <wind/>
+  </world>
+</sdf>
