@@ -1,10 +1,9 @@
 # maze_robot
-## ROS based Line Follower and Maze solver robot simulation in Gazebo
+## Line Follower and Maze Solver Robot Using OpenCV
 <br>
 
 <img src="https://img.shields.io/github/license/nilutpolkashyap/maze_robot?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/nilutpolkashyap/maze_robot?style=for-the-badge">
 
-Clone this Repository - ``` git clone https://github.com/nilutpolkashyap/maze_robot.git ```
 ____________________________________________________________________________
 # **Details About Project**
 
@@ -19,14 +18,46 @@ Robot Drive Plugin Used - [Differential Drive - Gazebo](http://gazebosim.org/tut
 
 ## Fusion360 Model
 <div align="center">
-<img  alt="Fusion360 Model" width="70%" src="https://raw.githubusercontent.com/nilutpolkashyap/maze_robot/main/resources/maze_robot.png" />
+<img  alt="Fusion360 Model" width="60%" src="resources/maze_robot.png" />
 <br />
 </div>
 
-## Final Rendered Fusion360 Model
+## Clone this repository inside your ROS Workspace:
+```
+cd ~/catkin_ws/src/
+git clone https://github.com/nilutpolkashyap/maze_robot.git
+cd ~/catkin_ws/
+catkin_make
+source devel/setup.bash
+```
+
+## A. Line Follower Robot
+Type the command in a terminal to launch the Line follower world simulation:
+```
+roslaunch maze_robot_description line_follower.launch
+```
+Type the command in another terminal to run the line follower node:
+```
+rosrun maze_robot_solver line_follower.py
+```
+OUTPUT - 
 <div align="center">
-<img  alt="Final Rendered Fusion360 Model" width="70%" src="https://raw.githubusercontent.com/nilutpolkashyap/maze_robot/main/resources/maze_robot_render.png" />
+<img  alt="Fusion360 Model" src="resources/line_follower_algorithm.JPG" />
 <br />
 </div>
 
 
+## B. Maze Solving Robot
+Type the command in a terminal to launch the Maze solver world simulation:
+```
+roslaunch maze_robot_description maze_world.launch
+```
+Type the command in another terminal to run the maze solver node:
+```
+rosrun maze_robot_solver maze_solver.py
+```
+OUTPUT - 
+<div align="center">
+<img  alt="Fusion360 Model" src="resources/maze_solving_algorithm.JPG" />
+<br />
+</div>
